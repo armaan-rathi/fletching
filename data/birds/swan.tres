@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="BirdData" format=3]
+
+[ext_resource type="Script" path="res://scripts/bird_data.gd" id="1_ecsjo"]
+
+[resource]
+script = ExtResource("1_ecsjo")
+id = "swan"
+display_name = "Swan"
+blurb = "Haughty and elegant."
+victory_style = "smirk"
+parts = PackedStringArray("head_slim", "beak_swan_upper", "beak_swan_lower", "eyes_slim_L", "eyes_slim_R", "mask_swan", "neck_stretch", "tail_short")
+head_part = "head_slim"
+body_shape = {
+"slim": 1.0
+}
+neck_extend = 0.24
+eye_style = {
+"lid_slant": -0.22,
+"lid_top": 0.42
+}
+variants = Array[Dictionary]([{
+"accent": Color(0.12156863, 0.12156863, 0.14117648, 1),
+"beak": Color(0.9411765, 0.5411765, 0.1882353, 1),
+"belly": Color(1, 1, 1, 1),
+"body": Color(0.972549, 0.972549, 0.9607843, 1),
+"iris": Color(0.101960786, 0.101960786, 0.13333334, 1),
+"iris_low": Color(0.22745098, 0.22745098, 0.3529412, 1),
+"legs": Color(0.22745098, 0.22745098, 0.2509804, 1),
+"name": "Mute"
+}, {
+"accent": Color(0.9411765, 0.9411765, 0.9411765, 1),
+"beak": Color(0.8784314, 0.22745098, 0.22745098, 1),
+"belly": Color(0.20392157, 0.20392157, 0.23529412, 1),
+"body": Color(0.16470589, 0.16470589, 0.1882353, 1),
+"iris": Color(0.5411765, 0.101960786, 0.101960786, 1),
+"iris_low": Color(0.8156863, 0.2509804, 0.2509804, 1),
+"legs": Color(0.22745098, 0.22745098, 0.2509804, 1),
+"name": "Black"
+}, {
+"accent": Color(0.16470589, 0.14117648, 0.1254902, 1),
+"beak": Color(0.8784314, 0.5647059, 0.1882353, 1),
+"belly": Color(1, 0.972549, 0.89411765, 1),
+"body": Color(0.9411765, 0.89411765, 0.7529412, 1),
+"iris": Color(0.101960786, 0.101960786, 0.13333334, 1),
+"iris_low": Color(0.2901961, 0.22745098, 0.16470589, 1),
+"legs": Color(0.2901961, 0.2509804, 0.21960784, 1),
+"name": "Gilded"
+}, {
+"accent": Color(0.12156863, 0.12156863, 0.14117648, 1),
+"beak": Color(0.9411765, 0.5411765, 0.1882353, 1),
+"belly": Color(0.89411765, 0.89411765, 0.91764706, 1),
+"body": Color(0.78431374, 0.78431374, 0.8156863, 1),
+"iris": Color(0.101960786, 0.101960786, 0.13333334, 1),
+"iris_low": Color(0.22745098, 0.22745098, 0.3529412, 1),
+"legs": Color(0.22745098, 0.22745098, 0.2509804, 1),
+"name": "Mist"
+}])

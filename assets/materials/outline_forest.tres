@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/shaders/outline.gdshader" id="1_ofs"]
+[ext_resource type="Texture2D" path="res://assets/third_party/kaykit_forest/forest_texture.png" id="2_oft"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ofs")
+shader_parameter/outline_width = 0.03
+shader_parameter/base_use_texture = true
+shader_parameter/base_texture = ExtResource("2_oft")
+shader_parameter/base_band_tint_1 = Color(0.66, 0.68, 0.78, 1)

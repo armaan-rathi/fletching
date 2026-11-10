@@ -1,0 +1,116 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/bird.gd" id="1_lnhv0"]
+[ext_resource type="Shader" path="res://assets/shaders/charge_ring.gdshader" id="2_kwkq7"]
+[ext_resource type="Shader" path="res://assets/shaders/aim_line.gdshader" id="3_w3os2"]
+[ext_resource type="Script" path="res://scripts/bird_visual.gd" id="4_xjb55"]
+[ext_resource type="Script" path="res://scripts/bird_model.gd" id="5_y15vn"]
+[ext_resource type="PackedScene" path="res://assets/birds/bird_base.glb" id="6_l4u8j"]
+[ext_resource type="PackedScene" path="res://scenes/weapons/bow.tscn" id="7_ra0wd"]
+[ext_resource type="Script" path="res://scripts/bow.gd" id="8_58lp8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7n1kc"]
+radius = 0.4
+height = 1.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_iwu4d"]
+radius = 0.4
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7jtyp"]
+shading_mode = 0
+
+[sub_resource type="TorusMesh" id="TorusMesh_wxyxr"]
+outer_radius = 0.62
+rings = 24
+ring_segments = 6
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_68eda"]
+top_radius = 0.4
+bottom_radius = 0.4
+height = 0.02
+radial_segments = 20
+rings = 1
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3ybj5"]
+render_priority = 0
+shader = ExtResource("2_kwkq7")
+shader_parameter/color = null
+shader_parameter/charge = null
+shader_parameter/inner = null
+shader_parameter/outer = null
+shader_parameter/full_flash = null
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ncmdg"]
+size = Vector2(1.75, 1.75)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fkrbg"]
+render_priority = 0
+shader = ExtResource("3_w3os2")
+shader_parameter/color = null
+shader_parameter/length_m = null
+shader_parameter/dash_m = null
+shader_parameter/charge = null
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_la0wr"]
+size = Vector2(0.32, 1)
+
+[node name="Bird" type="CharacterBody3D" unique_id=1175628659 groups=["birds"]]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_lnhv0")
+
+[node name="Collision" type="CollisionShape3D" parent="." unique_id=422935948]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CapsuleShape3D_7n1kc")
+
+[node name="Hitbox" type="Area3D" parent="." unique_id=1789250584]
+collision_layer = 4
+collision_mask = 0
+monitoring = false
+
+[node name="Shape" type="CollisionShape3D" parent="Hitbox" unique_id=1001620574]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CapsuleShape3D_iwu4d")
+
+[node name="PlayerRing" type="MeshInstance3D" parent="." unique_id=841978102]
+transform = Transform3D(1, 0, 0, 0, 0.12, 0, 0, 0, 1, 0, 0.02, 0)
+material_override = SubResource("StandardMaterial3D_7jtyp")
+cast_shadow = 0
+mesh = SubResource("TorusMesh_wxyxr")
+
+[node name="BlobShadow" type="MeshInstance3D" parent="." unique_id=821459353]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+cast_shadow = 3
+mesh = SubResource("CylinderMesh_68eda")
+
+[node name="ChargeRing" type="MeshInstance3D" parent="." unique_id=1631774908]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025, 0)
+visible = false
+material_override = SubResource("ShaderMaterial_3ybj5")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_ncmdg")
+
+[node name="AimPivot" type="Node3D" parent="." unique_id=93482634]
+
+[node name="AimLine" type="MeshInstance3D" parent="AimPivot" unique_id=689145168]
+visible = false
+material_override = SubResource("ShaderMaterial_fkrbg")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_la0wr")
+
+[node name="VisualRoot" type="Node3D" parent="." unique_id=948804458]
+script = ExtResource("4_xjb55")
+
+[node name="Squash" type="Node3D" parent="VisualRoot" unique_id=1061649517]
+
+[node name="Model" type="Node3D" parent="VisualRoot/Squash" unique_id=947541249]
+script = ExtResource("5_y15vn")
+
+[node name="BirdBase" type="Node3D" parent="VisualRoot/Squash/Model" unique_id=512185390 instance=ExtResource("6_l4u8j")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="Quiver" type="Node3D" parent="VisualRoot/Squash" unique_id=2090999446]
+
+[node name="Bow" type="Node3D" parent="VisualRoot" unique_id=240653098 instance=ExtResource("7_ra0wd")]
+script = ExtResource("8_58lp8")

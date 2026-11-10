@@ -1,0 +1,20 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/bow.gd" id="1_wr7d4"]
+[ext_resource type="PackedScene" path="res://assets/weapons/bow.glb" id="2_rs3f0"]
+[ext_resource type="PackedScene" path="res://assets/weapons/arrow.glb" id="3_cwr1y"]
+
+[node name="Bow" type="Node3D" unique_id=240653098]
+script = ExtResource("1_wr7d4")
+
+[node name="Model" type="Node3D" parent="." unique_id=1894537130 instance=ExtResource("2_rs3f0")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="StringL" type="MeshInstance3D" parent="." unique_id=2654442]
+
+[node name="StringR" type="MeshInstance3D" parent="." unique_id=1440626876]
+
+[node name="NockedArrow" type="Node3D" parent="." unique_id=485727787]
+
+[node name="Model" type="Node3D" parent="NockedArrow" unique_id=103520825 instance=ExtResource("3_cwr1y")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)

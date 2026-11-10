@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="BirdData" format=3]
+
+[ext_resource type="Script" path="res://scripts/bird_data.gd" id="1_uv7fi"]
+
+[resource]
+script = ExtResource("1_uv7fi")
+id = "rooster"
+display_name = "Rooster"
+blurb = "Cocky."
+victory_style = "crowing"
+parts = PackedStringArray("head_round", "beak_short_upper", "beak_short_lower", "eyes_round_L", "eyes_round_R", "comb_rooster", "wattle_rooster", "tail_sickle")
+head_part = "head_round"
+body_shape = {
+"puff": 1.0
+}
+eye_style = {
+"brow_height": 0.14,
+"brow_raise_left": 0.08,
+"brow_slant": -0.2,
+"brow_thickness": 0.055,
+"lid_top": 0.14
+}
+variants = Array[Dictionary]([{
+"accent": Color(0.8862745, 0.22745098, 0.16470589, 1),
+"beak": Color(0.9490196, 0.7607843, 0.1882353, 1),
+"belly": Color(0.8509804, 0.5411765, 0.2901961, 1),
+"body": Color(0.70980394, 0.39215687, 0.18039216, 1),
+"iris": Color(0.22745098, 0.101960786, 0.0627451, 1),
+"iris_low": Color(0.5411765, 0.2901961, 0.1254902, 1),
+"legs": Color(0.9490196, 0.7607843, 0.1882353, 1),
+"name": "Classic"
+}, {
+"accent": Color(0.8862745, 0.22745098, 0.16470589, 1),
+"beak": Color(0.9490196, 0.7607843, 0.1882353, 1),
+"belly": Color(1, 1, 1, 1),
+"body": Color(0.9647059, 0.9490196, 0.91764706, 1),
+"iris": Color(0.22745098, 0.101960786, 0.0627451, 1),
+"iris_low": Color(0.5411765, 0.2901961, 0.1254902, 1),
+"legs": Color(0.9490196, 0.7607843, 0.1882353, 1),
+"name": "Leghorn"
+}, {
+"accent": Color(0.84705883, 0.16470589, 0.16470589, 1),
+"beak": Color(0.9098039, 0.72156864, 0.1882353, 1),
+"belly": Color(0.22745098, 0.22745098, 0.26666668, 1),
+"body": Color(0.16470589, 0.16470589, 0.1882353, 1),
+"iris": Color(0.22745098, 0.101960786, 0.0627451, 1),
+"iris_low": Color(0.5411765, 0.2901961, 0.1254902, 1),
+"legs": Color(0.9098039, 0.72156864, 0.1882353, 1),
+"name": "Onyx"
+}, {
+"accent": Color(0.8862745, 0.22745098, 0.16470589, 1),
+"beak": Color(0.9490196, 0.7607843, 0.1882353, 1),
+"belly": Color(0.9411765, 0.7529412, 0.4392157, 1),
+"body": Color(0.8784314, 0.627451, 0.2509804, 1),
+"iris": Color(0.22745098, 0.101960786, 0.0627451, 1),
+"iris_low": Color(0.5411765, 0.2901961, 0.1254902, 1),
+"legs": Color(0.9490196, 0.7607843, 0.1882353, 1),
+"name": "Golden"
+}])

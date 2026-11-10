@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Material" path="res://assets/materials/outline_forest.tres" id="1_jmjmu"]
+[ext_resource type="Shader" path="res://assets/shaders/toon.gdshader" id="2_3wfl8"]
+[ext_resource type="Texture2D" path="res://assets/third_party/kaykit_forest/forest_texture.png" id="3_w2oyp"]
+
+[resource]
+render_priority = 0
+next_pass = ExtResource("1_jmjmu")
+shader = ExtResource("2_3wfl8")
+shader_parameter/band_threshold = null
+shader_parameter/band_softness = null
+shader_parameter/rim_strength = 0.12
+shader_parameter/rim_in_shade = null
+shader_parameter/rim_tint = null
+shader_parameter/neutral_light = null
+shader_parameter/shade_lighten = null
+shader_parameter/canopy_min_height = null
+shader_parameter/albedo = null
+shader_parameter/use_texture = true
+shader_parameter/albedo_texture = ExtResource("3_w2oyp")
+shader_parameter/band_tint_0 = null
+shader_parameter/band_tint_1 = Color(0.66, 0.68, 0.78, 1)
+shader_parameter/band_tint_2 = null
+shader_parameter/band_tint_3 = null

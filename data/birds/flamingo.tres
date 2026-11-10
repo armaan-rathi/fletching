@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="BirdData" format=3]
+
+[ext_resource type="Script" path="res://scripts/bird_data.gd" id="1_uedni"]
+
+[resource]
+script = ExtResource("1_uedni")
+id = "flamingo"
+display_name = "Flamingo"
+blurb = "Flamboyant."
+victory_style = "giggle"
+parts = PackedStringArray("head_slim", "beak_banana_upper", "beak_banana_lower", "eyes_slim_L", "eyes_slim_R", "tuft_flamingo", "neck_stretch", "tail_short")
+head_part = "head_slim"
+body_shape = {
+"slim": 1.0
+}
+head_scale = 0.95
+neck_extend = 0.18
+eye_style = {
+"lashes": true,
+"lid_top": 0.1
+}
+idle_anim = "idle_flamingo"
+variants = Array[Dictionary]([{
+"accent": Color(0.16470589, 0.13333334, 0.2, 1),
+"beak": Color(0.95686275, 0.9019608, 0.8862745, 1),
+"belly": Color(1, 0.7607843, 0.83137256, 1),
+"body": Color(1, 0.56078434, 0.69411767, 1),
+"iris": Color(0.22745098, 0.1254902, 0.1882353, 1),
+"iris_low": Color(0.5411765, 0.2509804, 0.3764706, 1),
+"legs": Color(1, 0.56078434, 0.69411767, 1),
+"name": "Pink"
+}, {
+"accent": Color(0.16470589, 0.13333334, 0.2, 1),
+"beak": Color(0.95686275, 0.9019608, 0.8862745, 1),
+"belly": Color(1, 0.70980394, 0.61960787, 1),
+"body": Color(1, 0.47843137, 0.36078432, 1),
+"iris": Color(0.22745098, 0.1254902, 0.1254902, 1),
+"iris_low": Color(0.5411765, 0.2509804, 0.1882353, 1),
+"legs": Color(1, 0.47843137, 0.36078432, 1),
+"name": "Coral"
+}, {
+"accent": Color(0.16470589, 0.13333334, 0.2, 1),
+"beak": Color(0.95686275, 0.93333334, 0.9647059, 1),
+"belly": Color(0.9019608, 0.8039216, 0.9647059, 1),
+"body": Color(0.7882353, 0.60784316, 0.9098039, 1),
+"iris": Color(0.16470589, 0.1254902, 0.2509804, 1),
+"iris_low": Color(0.41568628, 0.2901961, 0.6039216, 1),
+"legs": Color(0.7882353, 0.60784316, 0.9098039, 1),
+"name": "Lilac"
+}, {
+"accent": Color(0.16470589, 0.13333334, 0.2, 1),
+"beak": Color(0.9411765, 0.8392157, 0.8392157, 1),
+"belly": Color(1, 1, 1, 1),
+"body": Color(0.9647059, 0.9019608, 0.9019608, 1),
+"iris": Color(0.22745098, 0.1254902, 0.1882353, 1),
+"iris_low": Color(0.5411765, 0.2509804, 0.3764706, 1),
+"legs": Color(0.9490196, 0.6901961, 0.7529412, 1),
+"name": "Pale"
+}])

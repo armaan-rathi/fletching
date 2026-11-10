@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/toon_prop.gd" id="1_08wmn"]
+[ext_resource type="PackedScene" path="res://assets/third_party/kaykit_forest/Rock_1_D_Color1.gltf" id="2_dijks"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_cmmft"]
+height = 1.1
+
+[node name="RockMid" type="StaticBody3D" unique_id=1769662855]
+collision_layer = 33
+collision_mask = 0
+
+[node name="Model" type="Node3D" parent="." unique_id=616315661]
+script = ExtResource("1_08wmn")
+model = ExtResource("2_dijks")
+
+[node name="Shape" type="CollisionShape3D" parent="." unique_id=486122377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0)
+shape = SubResource("CylinderShape3D_cmmft")

@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="BirdData" format=3]
+
+[ext_resource type="Script" path="res://scripts/bird_data.gd" id="1_187xi"]
+
+[resource]
+script = ExtResource("1_187xi")
+id = "crow"
+display_name = "Crow"
+blurb = "Mischievous and greedy."
+victory_style = "evil_laugh"
+parts = PackedStringArray("head_crow", "beak_crow_upper", "beak_crow_lower", "eyes_crow_L", "eyes_crow_R", "tail_fan_plain")
+head_part = "head_crow"
+body_shape = {
+"slim": 0.6
+}
+head_scale = 0.95
+rim_tint = Color(0.5411765, 0.65882355, 1, 1)
+rim_strength = 0.75
+eye_style = {
+"lid_bottom": 0.2,
+"lid_slant": -0.12,
+"lid_top": 0.3,
+"pupil_scale": 0.9
+}
+variants = Array[Dictionary]([{
+"accent": Color(0.18039216, 0.1882353, 0.25882354, 1),
+"beak": Color(0.2901961, 0.29803923, 0.36078432, 1),
+"belly": Color(0.22745098, 0.23921569, 0.32156864, 1),
+"body": Color(0.18039216, 0.1882353, 0.25882354, 1),
+"iris": Color(0.101960786, 0.101960786, 0.13333334, 1),
+"iris_low": Color(0.3529412, 0.41568628, 0.6666667, 1),
+"legs": Color(0.2901961, 0.29803923, 0.36078432, 1),
+"name": "Classic"
+}, {
+"accent": Color(0.15686275, 0.19607843, 0.34509805, 1),
+"beak": Color(0.22745098, 0.2509804, 0.34509805, 1),
+"belly": Color(0.19607843, 0.23529412, 0.4, 1),
+"body": Color(0.15686275, 0.19607843, 0.34509805, 1),
+"iris": Color(0.078431375, 0.09411765, 0.15686275, 1),
+"iris_low": Color(0.2901961, 0.3529412, 0.627451, 1),
+"legs": Color(0.22745098, 0.2509804, 0.34509805, 1),
+"name": "Raven"
+}, {
+"accent": Color(0.9254902, 0.9098039, 0.8784314, 1),
+"beak": Color(0.84705883, 0.627451, 0.627451, 1),
+"belly": Color(0.9647059, 0.95686275, 0.9411765, 1),
+"body": Color(0.9254902, 0.9098039, 0.8784314, 1),
+"iris": Color(0.5411765, 0.1254902, 0.1882353, 1),
+"iris_low": Color(0.8156863, 0.3764706, 0.4392157, 1),
+"legs": Color(0.84705883, 0.627451, 0.627451, 1),
+"name": "Ghost"
+}, {
+"accent": Color(0.2901961, 0.2901961, 0.32156864, 1),
+"beak": Color(0.16470589, 0.16470589, 0.1882353, 1),
+"belly": Color(0.5411765, 0.5411765, 0.57254905, 1),
+"body": Color(0.2901961, 0.2901961, 0.32156864, 1),
+"iris": Color(0.101960786, 0.101960786, 0.13333334, 1),
+"iris_low": Color(0.2901961, 0.2901961, 0.41568628, 1),
+"legs": Color(0.16470589, 0.16470589, 0.1882353, 1),
+"name": "Hooded"
+}])

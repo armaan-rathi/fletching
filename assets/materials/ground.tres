@@ -1,0 +1,26 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/shaders/ground.gdshader" id="1_5ix7j"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_5ix7j")
+shader_parameter/band_threshold = null
+shader_parameter/band_softness = null
+shader_parameter/rim_strength = null
+shader_parameter/rim_in_shade = null
+shader_parameter/rim_tint = null
+shader_parameter/neutral_light = null
+shader_parameter/shade_lighten = null
+shader_parameter/corner_radius = null
+shader_parameter/grass_color = null
+shader_parameter/moss_color = null
+shader_parameter/patch_light_color = null
+shader_parameter/patch_warm_color = null
+shader_parameter/dirt_color = null
+shader_parameter/deep_color = null
+shader_parameter/patch_scale = null
+shader_parameter/dirt_spot = null
+shader_parameter/trampled_color = null
+shader_parameter/edge_width = null
+shader_parameter/fade_distance = null

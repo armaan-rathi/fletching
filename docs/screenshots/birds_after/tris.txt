@@ -1,0 +1,8 @@
+eagle      3698
+flamingo   3370
+owl        3318
+crow       3032
+pigeon     3312
+rooster    3652
+swan       3244
+vulture    3688

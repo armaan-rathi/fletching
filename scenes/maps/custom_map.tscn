@@ -1,0 +1,25 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/custom_map.gd" id="1_map"]
+[ext_resource type="Script" path="res://scripts/round_controller.gd" id="2_rc"]
+[ext_resource type="Script" path="res://scripts/match_hud.gd" id="3_hud"]
+[ext_resource type="Script" path="res://scripts/debug_hud.gd" id="4_dbg"]
+[ext_resource type="Script" path="res://scripts/power_up_spawner.gd" id="5_pu"]
+
+[node name="CustomMap" type="Node3D"]
+
+[node name="Map" type="Node3D" parent="."]
+script = ExtResource("1_map")
+
+[node name="RoundController" type="Node" parent="."]
+script = ExtResource("2_rc")
+spawns_path = NodePath("../Map/Spawns")
+
+[node name="MatchHud" type="CanvasLayer" parent="."]
+script = ExtResource("3_hud")
+
+[node name="DebugHud" type="CanvasLayer" parent="."]
+script = ExtResource("4_dbg")
+
+[node name="PowerUpSpawner" type="Node" parent="."]
+script = ExtResource("5_pu")

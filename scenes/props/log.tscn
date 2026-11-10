@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/env_prop.gd" id="1_um8ml"]
+[ext_resource type="PackedScene" path="res://assets/env/log.glb" id="2_6qx5b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xvmt1"]
+size = Vector3(2.2, 0.66, 0.66)
+
+[node name="Log" type="StaticBody3D" unique_id=1497820559]
+collision_layer = 33
+collision_mask = 0
+
+[node name="Model" type="Node3D" parent="." unique_id=280325051]
+script = ExtResource("1_um8ml")
+model = ExtResource("2_6qx5b")
+
+[node name="Shape" type="CollisionShape3D" parent="." unique_id=1145709078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.32, 0)
+shape = SubResource("BoxShape3D_xvmt1")

@@ -1,0 +1,8 @@
+eagle      1973
+flamingo   1627
+owl        1666
+crow       1446
+pigeon     1702
+rooster    1778
+swan       1578
+vulture    1978

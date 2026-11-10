@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://assets/shaders/outline.gdshader" id="1_0lybl"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_0lybl")
+shader_parameter/canopy_min_height = null
+shader_parameter/outline_width = 0.03
+shader_parameter/tint = null

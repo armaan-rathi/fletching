@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="BirdData" format=3]
+
+[ext_resource type="Script" path="res://scripts/bird_data.gd" id="1_471fg"]
+
+[resource]
+script = ExtResource("1_471fg")
+id = "eagle"
+display_name = "Bald Eagle"
+blurb = "Regal but a bit cranky."
+victory_style = "proud"
+parts = PackedStringArray("head_eagle", "beak_hooked_upper", "beak_hooked_lower", "eyes_eagle_L", "eyes_eagle_R", "collar_scalloped", "tail_fan")
+head_part = "head_eagle"
+lid_slot = "accent"
+eye_style = {
+"brow_height": 0.1,
+"brow_slant": 0.35,
+"brow_thickness": 0.08,
+"lid_slant": 0.3,
+"lid_top": 0.24
+}
+variants = Array[Dictionary]([{
+"accent": Color(0.972549, 0.972549, 0.9607843, 1),
+"beak": Color(0.9607843, 0.72156864, 0.18039216, 1),
+"belly": Color(0.33333334, 0.21176471, 0.14117648, 1),
+"body": Color(0.33333334, 0.21176471, 0.14117648, 1),
+"iris": Color(0.16470589, 0.12156863, 0.101960786, 1),
+"iris_low": Color(0.41960785, 0.2901961, 0.16470589, 1),
+"legs": Color(0.9607843, 0.72156864, 0.18039216, 1),
+"name": "Classic"
+}, {
+"accent": Color(0.91764706, 0.827451, 0.6039216, 1),
+"beak": Color(0.9137255, 0.6509804, 0.16470589, 1),
+"belly": Color(0.47843137, 0.32156864, 0.1882353, 1),
+"body": Color(0.47843137, 0.32156864, 0.1882353, 1),
+"iris": Color(0.16470589, 0.12156863, 0.101960786, 1),
+"iris_low": Color(0.47843137, 0.3529412, 0.16470589, 1),
+"legs": Color(0.9137255, 0.6509804, 0.16470589, 1),
+"name": "Golden"
+}, {
+"accent": Color(0.95686275, 0.9647059, 0.98039216, 1),
+"beak": Color(0.9411765, 0.7529412, 0.2509804, 1),
+"belly": Color(0.2901961, 0.30980393, 0.36078432, 1),
+"body": Color(0.2901961, 0.30980393, 0.36078432, 1),
+"iris": Color(0.11764706, 0.13333334, 0.1882353, 1),
+"iris_low": Color(0.2901961, 0.3529412, 0.47843137, 1),
+"legs": Color(0.9411765, 0.7529412, 0.2509804, 1),
+"name": "Storm"
+}, {
+"accent": Color(0.84705883, 0.8235294, 0.7764706, 1),
+"beak": Color(0.8784314, 0.627451, 0.1254902, 1),
+"belly": Color(0.16862746, 0.14117648, 0.1254902, 1),
+"body": Color(0.16862746, 0.14117648, 0.1254902, 1),
+"iris": Color(0.101960786, 0.078431375, 0.07058824, 1),
+"iris_low": Color(0.3529412, 0.22745098, 0.16470589, 1),
+"legs": Color(0.8784314, 0.627451, 0.1254902, 1),
+"name": "Midnight"
+}])

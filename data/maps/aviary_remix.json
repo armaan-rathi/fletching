@@ -1,0 +1,221 @@
+{
+	"name": "Aviary Remix",
+	"version": 1,
+	"size": [
+		20,
+		14
+	],
+	"seed": 7,
+	"items": [
+		{
+			"type": "dirt",
+			"x": 0,
+			"z": -0.5,
+			"yaw": 0,
+			"scale": 1.4
+		},
+		{
+			"type": "tree",
+			"x": 0,
+			"z": -0.5,
+			"yaw": 20,
+			"scale": 1.0
+		},
+		{
+			"type": "rock_big",
+			"x": -4.6,
+			"z": -2.6,
+			"yaw": 30,
+			"scale": 1.0
+		},
+		{
+			"type": "rock_mid",
+			"x": 4.3,
+			"z": 2.8,
+			"yaw": 320,
+			"scale": 1.0
+		},
+		{
+			"type": "log",
+			"x": -3.2,
+			"z": 2.4,
+			"yaw": 65,
+			"scale": 1.0
+		},
+		{
+			"type": "log",
+			"x": 3.4,
+			"z": -3.6,
+			"yaw": 345,
+			"scale": 1.0
+		},
+		{
+			"type": "stump",
+			"x": 7.3,
+			"z": 0.2,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "stump",
+			"x": -7.5,
+			"z": 0.6,
+			"yaw": 90,
+			"scale": 0.9
+		},
+		{
+			"type": "bush",
+			"x": -1.6,
+			"z": -3.7,
+			"yaw": 10,
+			"scale": 1.0
+		},
+		{
+			"type": "bush_round",
+			"x": 2.2,
+			"z": 1.1,
+			"yaw": 50,
+			"scale": 0.8
+		},
+		{
+			"type": "bush_low",
+			"x": -5.6,
+			"z": 3.4,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "bush",
+			"x": 8.0,
+			"z": 3.1,
+			"yaw": 70,
+			"scale": 0.9
+		},
+		{
+			"type": "grass",
+			"x": 1.4,
+			"z": -2.0,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "grass_small",
+			"x": -2.2,
+			"z": -0.6,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "grass_small",
+			"x": 5.2,
+			"z": 4.9,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "grass_small",
+			"x": -7.6,
+			"z": -2.6,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "grass",
+			"x": 6.4,
+			"z": -5.4,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "nest",
+			"x": -2.4,
+			"z": -5.0,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "nest",
+			"x": 5.6,
+			"z": -1.6,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "nest",
+			"x": -1.2,
+			"z": 5.3,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "pad",
+			"x": 0,
+			"z": 3.4,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "pad",
+			"x": -6.0,
+			"z": -2.0,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "pad",
+			"x": 6.0,
+			"z": -3.8,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "spawn",
+			"x": -7,
+			"z": -4.3,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "spawn",
+			"x": 7,
+			"z": -4.3,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "spawn",
+			"x": -7,
+			"z": 4.3,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "spawn",
+			"x": 7,
+			"z": 4.3,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "flowers",
+			"x": -8.2,
+			"z": -5.2,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "flowers",
+			"x": 3.0,
+			"z": 5.6,
+			"yaw": 0,
+			"scale": 1.0
+		},
+		{
+			"type": "flowers",
+			"x": 8.3,
+			"z": -1.8,
+			"yaw": 0,
+			"scale": 1.0
+		}
+	]
+}
